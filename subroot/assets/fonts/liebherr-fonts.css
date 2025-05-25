@@ -1,0 +1,29 @@
+@font-face {
+  font-family: LiebherrHead-Black;
+  src: url(LiebherrHead-Black_Web.woff2) format("woff2");
+  font-display: swap
+}
+
+@font-face {
+  font-family: LiebherrHead-Regular;
+  src: url(LiebherrHead-Regular_Web.woff2) format("woff2");
+  font-display: swap
+}
+
+@font-face {
+  font-family: LiebherrText-Regular;
+  src: url(LiebherrText-Regular_Web.woff2) format("woff2");
+  font-display: swap
+}
+
+@font-face {
+  font-family: LiebherrText-Bold;
+  src: url(LiebherrText-Bold_Web.woff2) format("woff2");
+  font-display: swap
+}
+
+@font-face {
+  font-family: LiebherrText-Medium;
+  src: url(LiebherrText-Medium_Web.woff2) format("woff2");
+  font-display: swap
+}
