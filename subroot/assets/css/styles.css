@@ -52,7 +52,7 @@ button {
 /* RESET STYLES */
 
 /*  GLOBAL STYLES */
-:root {
+html:root {
   --font-base-color: #000000;
   --copytext-font-family: LiebherrText-Regular;
   --copytext-font-family-bold: LiebherrText-Bold;
@@ -62,6 +62,10 @@ button {
   --primary-color: #2779C4;
   --success-color: #006800;
   --warning-color: #EB6F25;
+
+  --bs-primary-rgb: 39, 121, 196;
+  --bs-success-rgb: 0, 104, 0;
+  --bs-warning-rgb: 235, 111, 37;
 }
 
 html {
@@ -87,22 +91,20 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400 !important;
 }
 
-.fw-bold {
+.liebherr-header-highlighted {
+  border-bottom: 6px solid black;
+  border-top: 6px solid black;
+  padding: 4px 0;
+}
+
+body .fw-bold {
   font-family: var(--copytext-font-family-bold) !important;
 }
 
-.fw-medium {
+body .fw-medium {
   font-family: var(--copytext-font-family-medium) !important;
 }
-.text-primary {
-  color: var(--primary-color) !important;
-}
-.text-success {
-  color: var(--success-color) !important;
-}
-.text-warning {
-  color: var(--warning-color) !important;
-}
+
 .liebherr-container {
   max-width: 1440px;
   width: 100%;
@@ -233,6 +235,9 @@ body .btn-primary:active {
 body .btn.btn-outline-primary:hover {
   background-color: #003057 !important;
   background-color: #003057 !important;
+  color: #FFF !important;
+}
+body .btn.btn-primary:hover {
   color: #FFF !important;
 }
 .why-liebherr-section {
