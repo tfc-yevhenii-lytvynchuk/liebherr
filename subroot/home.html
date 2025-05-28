@@ -71,6 +71,10 @@
     .what-to-choose-section h2 {
       white-space: nowrap;
     }
+    .newsletter-section {
+      background: #F0F3F6;
+      padding: 90px 0;
+    }
     @media screen and (max-width: 768px) {
       .what-to-choose-section {
         padding: 48px 0;
@@ -81,7 +85,11 @@
       .what-to-choose-section h2 {
         white-space: normal;
       }
+      .newsletter-section {
+        padding: 48px 0;
+      }
     }
+
   </style>
 </head>
 <body>
@@ -110,7 +118,7 @@
           </li>
         </ul>
         <form id="nav-search-form" class="nav-search-form d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <input class="form-control me-2" id="nav-search-input" name="nav-search-input" type="search" placeholder="Search" aria-label="Search" autocomplete="on"/>
         </form>
         <div class="d-flex gap-3 flex-column flex-lg-row">
           <a><i class="bi bi-person"></i> <span class="d-lg-none">Profile</span> </a>
@@ -141,7 +149,7 @@
       <form id="product-search-form" action="" >
         <label class="fw-bold mb-2" for="search-products">Search products</label>
         <div class="d-flex gap-2 w-100">
-          <input class="form-control" type="text" id="product-name" name="product-name" placeholder="Enter product name">
+          <input class="form-control" type="text" id="product-name" name="product-name" placeholder="Enter product name" autocomplete="on">
           <button class="btn btn-primary" type="submit"><i class="bi bi-search me-2"></i> Search</button>
         </div>
       </form>
@@ -427,9 +435,9 @@
       <div class="what-to-choose-section-content">
         <div class="d-flex flex-column gap-3 p-3 p-sm-5 bg-white ">
           <h2 class="liebherr-header-highlighted fs-1 text-center">WHICH DEVICE TO CHOOSE?</h2>
-          <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+          <p class="m-0 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
         </div>
-        <a class="btn btn-primary w-100 d-flex align-items-center justify-content-between gap-2 mt-2"> DISCOVER LATEST PRODUCTS FROM LIEBHERR <i class="bi bi-arrow-right d-none d-sm-block"></i></a>
+        <a class="btn btn-primary w-100 d-flex align-items-center justify-content-between gap-2 mt-2">DISCOVER LATEST PRODUCTS FROM LIEBHERR <i class="bi bi-arrow-right d-none d-sm-block"></i></a>
       </div>
     </div>
   </section>
@@ -561,6 +569,61 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="liebherr-section">
+    <div class="liebherr-container">
+      <h2 class="mb-4">Gallery</h2>
+      <style>
+        .carousel-item img {
+          height: 400px;
+          min-height: 400px;
+          max-height: 400px;
+          object-fit: contain;
+        }
+      </style>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/carousel/1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/carousel/2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/carousel/3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://bosch-qdsa.tradeplace.com/assets/images/brands/bosch/home/de/products.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://qdsa.tradeplace.com/assets/images/brands/neff/home/de/products.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://qdsa.tradeplace.com/assets/images/brands/electrolux/home/de/products.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="liebherr-section newsletter-section">
+    <div class="liebherr-container d-flex flex-column gap-4">
+      <h2 class="text-center">Subscribe to our Newsletter</h2>
+      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna.</p>
+      <form class="d-flex gap-3 flex-column flex-sm-row">
+        <input type="email" id="email" name="email" placeholder="Enter your email" class="form-control" autocomplete="email">
+        <button class="btn btn-primary">Subscribe <i class="bi bi-arrow-right ms-2"></i></button>
+      </form>
     </div>
   </section>
 
