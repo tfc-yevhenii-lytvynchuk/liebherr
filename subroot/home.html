@@ -28,20 +28,6 @@
       max-width: 700px;
     }
 
-    .product-category-card-image {
-      background-color: #F0F3F6;
-      flex-grow: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 16px;
-      padding: 16px;
-      max-height: 370px;
-    }
-    .product-category-card-image img{
-      max-height: 100%;
-      object-fit: contain;
-    }
     @media screen and (max-width: 768px) {
       .banner-section-content {
         position: static;
@@ -51,12 +37,6 @@
         background: transparent;
         padding: 16px;
         background-color: #F0F3F6;
-      }
-      .product-category-card-image {
-        max-height: 370px;
-      }
-      .product-category-card-image img{
-        max-height: 95%;
       }
     }
     .what-to-choose-section {
@@ -93,14 +73,13 @@
       height: 450px;
       min-height: 450px;
       max-height: 450px;
-      object-fit: cover;
+      object-fit: contain;
     }
     @media screen and (max-width: 568px) {
       .gallery-section .carousel-item img {
         height: 280px;
         min-height: 280px;
         max-height: 280px;
-        object-fit: contain;
       }
     }
   </style>
@@ -108,7 +87,7 @@
 <body>
   <nav class="navbar sticky-top navbar-expand-lg bg-white">
     <div class="container-fluid liebherr-container">
-      <a href="#" class="me-5">
+      <a href="#" class="me-4">
         <img class="liebherr-header-logo" src="assets/images/logo.svg" alt="Liebherr">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -174,32 +153,32 @@
       <h2 class="mb-4">Liebherr product categories</h2>
       <div class="row g-4">
         <a href="#" class="col-12 col-md-6 col-lg-4">
-          <div class="product-category-card d-flex flex-column h-100 ">
-            <div class="product-category-card-image">
+          <div class="liebher-product-category-card d-flex flex-column h-100 ">
+            <div class="liebher-product-category-card-image">
               <img src="assets/images/categories/freezers.png" alt="Freezers">
             </div>
             <span class="fs-4">Freezers <i class="bi bi-chevron-right"></i></span>
           </div>
         </a>
         <a href="#" class="col-12 col-md-6 col-lg-4">
-          <div class="product-category-card d-flex flex-column h-100 ">
-            <div class="product-category-card-image">
+          <div class="liebher-product-category-card d-flex flex-column h-100 ">
+            <div class="liebher-product-category-card-image">
               <img src="assets/images/categories/fridge-freezers.png" alt="Freezers">
             </div>
             <span class="fs-4">Fridge Freezers <i class="bi bi-chevron-right"></i></span>
           </div>
         </a>
         <a href="#" class="col-12 col-md-6 col-lg-4">
-          <div class="product-category-card d-flex flex-column h-100 ">
-            <div class="product-category-card-image">
+          <div class="liebher-product-category-card d-flex flex-column h-100 ">
+            <div class="liebher-product-category-card-image">
               <img src="assets/images/categories/fridges.png" alt="Freezers">
             </div>
             <span class="fs-4">Fridges <i class="bi bi-chevron-right"></i></span>
           </div>
         </a>
         <a href="#" class="col-12 col-md-6 col-lg-4">
-          <div class="product-category-card d-flex flex-column h-100 ">
-            <div class="product-category-card-image">
+          <div class="liebher-product-category-card d-flex flex-column h-100 ">
+            <div class="liebher-product-category-card-image">
               <img src="https://media3.bsh-group.com/Product_Shots/3000x3000/24870967_B5ACJ7AG3_STP_def.jpg" alt="Freezers">
             </div>
             <span class="fs-4">Ovens <i class="bi bi-chevron-right"></i></span>
@@ -589,6 +568,7 @@
     <div class="liebherr-container">
       <h2 class="mb-4">Gallery</h2>
       <div id="home-gallery-carousel" class="carousel slide carousel-dark" data-bs-ride="carousel"  data-bs-theme="dark">
+        <!-- https://getbootstrap.com/docs/5.3/components/carousel/#autoplaying-carousels -->
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#home-gallery-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#home-gallery-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -599,6 +579,9 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <img src="https://qdsa.tradeplace.com/assets/images/brands/neff/home/de/products.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
             <img src="assets/images/carousel/1.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
@@ -609,9 +592,6 @@
           </div>
           <div class="carousel-item">
             <img src="https://bosch-qdsa.tradeplace.com/assets/images/brands/bosch/home/de/products.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://qdsa.tradeplace.com/assets/images/brands/neff/home/de/products.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
             <img src="https://qdsa.tradeplace.com/assets/images/brands/electrolux/home/de/products.png" class="d-block w-100" alt="...">
@@ -633,7 +613,7 @@
     <div class="liebherr-container d-flex flex-column gap-4">
       <h2 class="text-center">Subscribe to our Newsletter</h2>
       <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna.</p>
-      <form class="d-flex gap-3 flex-column flex-sm-row">
+      <form id="newsletter-form" class="d-flex gap-3 flex-column flex-sm-row">
         <input type="email" id="email" name="email" placeholder="Enter your email" class="form-control" autocomplete="email">
         <button class="btn btn-primary">Subscribe <i class="bi bi-arrow-right ms-2"></i></button>
       </form>
