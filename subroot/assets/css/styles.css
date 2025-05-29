@@ -262,10 +262,16 @@ body .btn.btn-primary:hover {
   flex-direction: column;
   padding: 24px;
 }
+.liebherr-product-card-image {
+  height: 220px;
+}
 @media (max-width: 576px) {
   .liebherr-product-card {
     width: 294px;
     min-width: 294px;
+  }
+  .liebherr-product-card-image {
+    height: 140px;
   }
 }
 
