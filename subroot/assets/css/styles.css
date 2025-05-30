@@ -310,4 +310,7 @@ body .btn.btn-primary:hover {
   }
 }
 
+input[type="search" i]::-webkit-search-cancel-button {
+  cursor: pointer;
+}
 /*  GLOBAL STYLES */
