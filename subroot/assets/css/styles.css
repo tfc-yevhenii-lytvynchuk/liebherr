@@ -155,12 +155,12 @@ body .form-control:focus {
 }
 .nav-search-form input.form-control {
   height: 40px;
-  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .nav-search-form button[type="submit"] {
   position: absolute;
-  right: 12px;
+  left: 8px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -311,6 +311,6 @@ body .btn.btn-primary:hover {
 }
 
 input[type="search" i]::-webkit-search-cancel-button {
-  display: none;
+  cursor: pointer;
 }
 /*  GLOBAL STYLES */
