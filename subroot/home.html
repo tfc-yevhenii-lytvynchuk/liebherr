@@ -111,11 +111,17 @@
         </ul>
         <form id="nav-search-form" class="nav-search-form d-flex" role="search">
           <input class="form-control me-2" id="nav-search-input" name="nav-search-input" type="search" placeholder="Search" aria-label="Search" autocomplete="on"/>
+          <button type="submit"><i class="bi bi-search me-2"></i></button>
         </form>
         <div class="d-flex gap-3 flex-column flex-lg-row">
-          <a><i class="bi bi-person"></i> <span class="d-lg-none">Profile</span> </a>
           <a><i class="bi bi-heart"></i> <span class="d-lg-none">Favorites</span></a> 
-          <a><i class="bi bi-intersect"></i> <span class="d-lg-none">Compare Products</span></a> 
+          <a>
+            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.3047 3.42969H21.6406V18.9219H11.3047V3.42969ZM20.8906 18.1719V4.17969H12.0547V18.1719H20.8906ZM0.359375 15.5703V0.078125H10.6953V15.5703H0.359375ZM1.10938 0.828125V14.8203H9.94531V0.828125H1.10938ZM15.7344 13.1328L15.1953 13.6953L12.6875 11.1406L15.1953 8.63281L15.7344 9.17188L14.1406 10.7656H20.1406V11.5156H14.1172L15.7344 13.1328ZM6.26562 5.86719L6.80469 5.32812L9.3125 7.85938L6.80469 10.3672L6.26562 9.82812L7.85938 8.25781H1.85938V7.50781H7.88281L6.26562 5.86719Z" fill="black"/>
+            </svg>
+            <span class="d-lg-none">Compare Products</span>
+          </a>
+          <a><i class="bi bi-person"></i> <span class="d-lg-none">Profile</span> </a>
           <a><i class="bi bi-cart"></i> <span class="d-lg-none">Cart</span> </a>
         </div>
       </div>
@@ -136,7 +142,7 @@
       <img src="assets/images/liebherr-banner.png" alt="Banner Image">
     </div>
     <div class="banner-section-content">
-      <h1 class="liebherr-header-highlighted m-0">The Liebherr B2B Product Portal</h1>
+      <h1 class="liebherr-header-highlighted m-0 display-5">The Liebherr B2B Product Portal</h1>
       <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
       <form id="product-search-form" action="" >
         <label class="fw-bold mb-2" for="search-products">Search products</label>
@@ -150,7 +156,7 @@
 
   <section class="liebherr-section">
     <div class="liebherr-container">
-      <h2 class="mb-4">Liebherr product categories</h2>
+      <h2 class="mb-4 display-6">Liebherr product categories</h2>
       <div class="row g-4">
         <a href="#" class="col-12 col-md-6 col-lg-4">
           <div class="liebher-product-category-card d-flex flex-column h-100 ">
@@ -219,7 +225,7 @@
 
   <section class="liebherr-section">
     <div class="liebherr-container">
-      <h2 class="mb-4">Our Best Sales</h2>
+      <h2 class="mb-4 display-6">Our Best Sales</h2>
       <ul class="nav nav-underline gap-4">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">FRIDGES</a>
@@ -255,7 +261,7 @@
             <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
           </div>
           <div class="d-flex justify-content-between align-items-center mt-auto">
-            <span class="fs-4 fw-bold">1,249.00 EUR</span>
+            <span class="fs-4">1,249.00 EUR</span>
             <span class="text-warning fs-7">
               <i class="bi bi-truck"></i> Delivery 3-4 weeks
             </span>
@@ -292,7 +298,7 @@
             <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
           </div>
           <div class="d-flex justify-content-between align-items-center mt-auto">
-            <span class="fs-4 fw-bold">1,249.00 EUR</span>
+            <span class="fs-4">1,249.00 EUR</span>
             <span class="text-success fs-7">
               <i class="bi bi-check2"></i> Available
             </span>
@@ -329,7 +335,7 @@
             <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
           </div>
           <div class="d-flex justify-content-between align-items-center mt-auto">
-            <span class="fs-4 fw-bold">1,249.00 EUR</span>
+            <span class="fs-4">1,249.00 EUR</span>
             <span class="text-success fs-7">
               <i class="bi bi-check2"></i> Available
             </span>
@@ -366,7 +372,7 @@
             <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
           </div>
           <div class="d-flex justify-content-between align-items-center mt-auto">
-            <span class="fs-4 fw-bold">1,249.00 EUR</span>
+            <span class="fs-4">1,249.00 EUR</span>
             <span class="text-success fs-7">
               <i class="bi bi-check2"></i> Available
             </span>
@@ -403,7 +409,7 @@
             <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
           </div>
           <div class="d-flex justify-content-between align-items-center mt-auto">
-            <span class="fs-4 fw-bold">1,249.00 EUR</span>
+            <span class="fs-4">1,249.00 EUR</span>
             <span class="text-success fs-7">
               <i class="bi bi-check2"></i> Available
             </span>
@@ -426,7 +432,7 @@
     <div class="liebherr-container">
       <div class="what-to-choose-section-content">
         <div class="d-flex flex-column gap-3 p-3 p-sm-5 bg-white ">
-          <h2 class="liebherr-header-highlighted fs-1 text-center">WHICH DEVICE TO CHOOSE?</h2>
+          <h2 class="liebherr-header-highlighted text-center display-5">WHICH DEVICE TO CHOOSE?</h2>
           <p class="m-0 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
         </div>
         <a class="btn btn-primary w-100 d-flex align-items-center justify-content-between gap-2 mt-2">DISCOVER LATEST PRODUCTS <i class="bi bi-arrow-right"></i></a>
@@ -436,7 +442,7 @@
 
   <section class="liebherr-section">
     <div class="liebherr-container">
-      <h2 class="mb-4">Accessories</h2>
+      <h2 class="mb-4 display-6">Accessories</h2>
       <ul class="nav nav-underline gap-4">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">ALL ACCESSORIES</a>
@@ -465,7 +471,7 @@
           </div>
           <span class="fs-4 mb-2">Set of 2 FreshAir activated carbon filters</span>
           <div class="d-flex justify-content-between align-items-center mt-auto">
-            <span class="fs-4 fw-bold">1,249.00 EUR</span>
+            <span class="fs-4">1,249.00 EUR</span>
             <span class="text-warning fs-7">
               <i class="bi bi-truck"></i> Delivery 3-4 weeks
             </span>
@@ -492,7 +498,7 @@
           </div>
           <span class="fs-4 mb-2">FreshAir activated carbon filter</span>
           <div class="d-flex justify-content-between align-items-center mt-auto">
-            <span class="fs-4 fw-bold">1,249.00 EUR</span>
+            <span class="fs-4">1,249.00 EUR</span>
             <span class="text-success fs-7">
               <i class="bi bi-check2"></i> Available
             </span>
@@ -519,7 +525,7 @@
           </div>
           <span class="fs-4 mb-2">FreshAir activated carbon filter</span>
           <div class="d-flex justify-content-between align-items-center mt-auto">
-            <span class="fs-4 fw-bold">1,249.00 EUR</span>
+            <span class="fs-4">1,249.00 EUR</span>
             <span class="text-success fs-7">
               <i class="bi bi-check2"></i> Available
             </span>
@@ -546,7 +552,7 @@
           </div>
           <span class="fs-4 mb-2">FreshAir activated carbon filter</span>
           <div class="d-flex justify-content-between align-items-center mt-auto">
-            <span class="fs-4 fw-bold">1,249.00 EUR</span>
+            <span class="fs-4">1,249.00 EUR</span>
             <span class="text-success fs-7">
               <i class="bi bi-check2"></i> Available
             </span>
@@ -566,7 +572,7 @@
 
   <section class="liebherr-section gallery-section">
     <div class="liebherr-container">
-      <h2 class="mb-4">Gallery</h2>
+      <h2 class="mb-4 display-6">Gallery</h2>
       <div id="home-gallery-carousel" class="carousel slide carousel-dark" data-bs-ride="carousel"  data-bs-theme="dark">
         <!-- https://getbootstrap.com/docs/5.3/components/carousel/#autoplaying-carousels -->
         <div class="carousel-indicators">
@@ -611,7 +617,7 @@
 
   <section class="liebherr-section newsletter-section">
     <div class="liebherr-container d-flex flex-column gap-4">
-      <h2 class="text-center">Subscribe to our Newsletter</h2>
+      <h2 class="text-center fw-normal display-6">Subscribe to our Newsletter</h2>
       <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna.</p>
       <form id="newsletter-form" class="d-flex gap-3 flex-column flex-sm-row">
         <input type="email" id="email" name="email" placeholder="Enter your email" class="form-control" autocomplete="email">
