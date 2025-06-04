@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liebherr | Product Item</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fonts/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/fonts/liebherr-fonts.css">
+
+  <style>
+    #product-item-carousel {
+      width: 440px;
+    }
+    #product-item-carousel .carousel-item {
+      height: 500px;
+
+    }
+    #product-item-carousel .product-item-carousel-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+    }
+    #product-item-carousel .carousel-indicators {
+      position: relative;
+      z-index: 3;
+      margin: 24px 0 0;
+      gap: 16px;
+      justify-content: start;
+      flex-wrap: wrap;
+    }
+    #product-item-carousel .carousel-indicators button {
+      width: 46px;
+      min-width: 46px;
+      height: 46px;
+      background-color: transparent;
+      border: 1px solid #BDC4CA;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg bg-white">
+    <div class="container-fluid liebherr-container">
+      <a href="#" class="me-4">
+        <img class="liebherr-header-logo" src="assets/images/logo.svg" alt="Liebherr">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto gap-3 nav-underline">
+          <li class="nav-item">
+            <a href="#" class="nav-link">MAIN</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">PRODUCTS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">RESOURCES</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">CONTACT</a>
+          </li>
+        </ul>
+        <form id="nav-search-form" class="nav-search-form d-flex" role="search">
+          <input class="form-control me-2" id="nav-search-input" name="nav-search-input" type="search" placeholder="Search" aria-label="Search" autocomplete="on"/>
+          <button type="submit"><i class="bi bi-search me-2"></i></button>
+        </form>
+        <div class="d-flex gap-3 flex-column flex-lg-row">
+          <a><i class="bi bi-heart"></i> <span class="d-lg-none">Favorites</span></a> 
+          <a>
+            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.3047 3.42969H21.6406V18.9219H11.3047V3.42969ZM20.8906 18.1719V4.17969H12.0547V18.1719H20.8906ZM0.359375 15.5703V0.078125H10.6953V15.5703H0.359375ZM1.10938 0.828125V14.8203H9.94531V0.828125H1.10938ZM15.7344 13.1328L15.1953 13.6953L12.6875 11.1406L15.1953 8.63281L15.7344 9.17188L14.1406 10.7656H20.1406V11.5156H14.1172L15.7344 13.1328ZM6.26562 5.86719L6.80469 5.32812L9.3125 7.85938L6.80469 10.3672L6.26562 9.82812L7.85938 8.25781H1.85938V7.50781H7.88281L6.26562 5.86719Z" fill="black"/>
+            </svg>
+            <span class="d-lg-none">Compare Products</span>
+          </a>
+          <a><i class="bi bi-person"></i> <span class="d-lg-none">Profile</span> </a>
+          <a><i class="bi bi-cart"></i> <span class="d-lg-none">Cart</span> </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="liebherr-breadcrumb">
+    <nav class="liebherr-container" aria-label="breadcrumb">
+      <ol class="breadcrumb py-1 py-lg-2 m-0">
+        <li class="breadcrumb-item" aria-current="page"><a href="home.html"><i class="bi bi-house"></i> Main</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="catalog.html">Product Catalog</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="">Fridge-freezers</a></li>
+        <li class="breadcrumb-item active" aria-current="page">RBbsc 528i Peak BioFresh</li>
+      </ol>
+    </nav>
+  </div>
+
+  <section class="liebherr-section">
+    <div class="liebherr-container">
+      <div class="d-flex gap-4">
+        <div id="product-item-carousel" class="carousel slide carousel-dark"  data-bs-theme="dark">
+          <!-- https://getbootstrap.com/docs/5.3/components/carousel/#autoplaying-carousels -->
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="product-item-carousel-image">
+                <img class="h-100" src="assets/images/product-carousel/1.png" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="product-item-carousel-image">
+                <img class="h-100" src="assets/images/product-carousel/2.png" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="product-item-carousel-image">
+                <img class="h-100" src="assets/images/product-carousel/3.png" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="product-item-carousel-image">
+                <img class="h-100" src="assets/images/product-carousel/4.png" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="product-item-carousel-image">
+                <img class="h-100" src="assets/images/product-carousel/5.png" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="product-item-carousel-image">
+                <img class="h-100" src="assets/images/product-carousel/6.png" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="product-item-carousel-image">
+                <img class="h-100" src="assets/images/product-carousel/7.png" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="product-item-carousel-image">
+                <img class="h-100" src="assets/images/product-carousel/8.png" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="product-item-carousel-image">
+                <img class="h-100" src="assets/images/product-carousel/9.png" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="product-item-carousel-image">
+                <img class="h-100" src="assets/images/product-carousel/10.png" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#product-item-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+              <img class="h-100" src="assets/images/product-carousel/1.png" alt="...">
+            </button>
+            <button type="button" data-bs-target="#product-item-carousel" data-bs-slide-to="1" aria-label="Slide 2">
+              <img class="h-100" src="assets/images/product-carousel/2.png" alt="...">
+            </button>
+            <button type="button" data-bs-target="#product-item-carousel" data-bs-slide-to="2" aria-label="Slide 3">
+              <img class="h-100" src="assets/images/product-carousel/3.png" alt="...">
+            </button>
+            <button type="button" data-bs-target="#product-item-carousel" data-bs-slide-to="3" aria-label="Slide 4">
+              <img class="h-100" src="assets/images/product-carousel/4.png" alt="...">
+            </button>
+            <button type="button" data-bs-target="#product-item-carousel" data-bs-slide-to="4" aria-label="Slide 5">
+              <img class="h-100" src="assets/images/product-carousel/5.png" alt="...">
+            </button>
+            <button type="button" data-bs-target="#product-item-carousel" data-bs-slide-to="5" aria-label="Slide 6">
+              <img class="h-100" src="assets/images/product-carousel/6.png" alt="...">
+            </button>
+            <button type="button" data-bs-target="#product-item-carousel" data-bs-slide-to="6" aria-label="Slide 7">
+              <img class="h-100" src="assets/images/product-carousel/7.png" alt="...">
+            </button>
+            <button type="button" data-bs-target="#product-item-carousel" data-bs-slide-to="7" aria-label="Slide 8">
+              <img class="h-100" src="assets/images/product-carousel/8.png" alt="...">
+            </button>
+            <button type="button" data-bs-target="#product-item-carousel" data-bs-slide-to="8" aria-label="Slide 9">
+              <img class="h-100" src="assets/images/product-carousel/9.png" alt="...">
+            </button>
+            <button type="button" data-bs-target="#product-item-carousel" data-bs-slide-to="9" aria-label="Slide 10">
+              <img class="h-100" src="assets/images/product-carousel/10.png" alt="...">
+            </button>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#product-item-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#product-item-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="liebherr-footer text-white">
+    <div class="liebherr-container">
+      <div class="d-flex gap-4 justify-content-between flex-wrap flex-column flex-md-row">
+        <div class="d-flex flex-column gap-3">
+          <span class="fw-bold mb-2">Products</span>
+          <a class="text-secondary" href="#">Refrigerators</a>
+          <a class="text-secondary" href="#">Freezers</a>
+          <a class="text-secondary" href="#">Wine Cellars</a>
+        </div>
+        <div class="d-flex flex-column gap-3">
+          <span class="fw-bold mb-2">Company</span>
+          <a class="text-secondary" href="#">About us</a>
+          <a class="text-secondary" href="#">Career</a>
+        </div>
+        <div class="d-flex flex-column gap-3">
+          <span class="fw-bold mb-2">Resources</span>
+          <a class="text-secondary" href="#">News</a>
+          <a class="text-secondary" href="#">Shipping</a>
+        </div>
+        <div class="d-flex flex-column gap-3">
+          <span class="fw-bold mb-2">Contact</span>
+          <a class="text-secondary" href="#">Contact us</a>
+          <a class="text-secondary" href="#">Locations</a>
+        </div>
+        <div class="d-flex flex-column gap-3">
+          <span class="fw-bold mb-2">Social</span>
+          <a class="text-secondary" href="#"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+          <a class="text-secondary" href="#"><i class="bi bi-twitter me-2"></i>X (Twitter)</a>
+          <a class="text-secondary" href="#"><i class="bi bi-instagram me-2"></i>Instagram</a>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between mt-5 flex-wrap flex-column flex-md-row gap-4">
+        <img width="160" height="20" src="assets/images/logo-white.svg" alt="Liebherr" class="img-fluid">
+        <div class="d-flex gap-4 align-items-start align-items-md-center flex-column flex-md-row">
+          <a class="text-secondary" href="">Imprint</a>
+          <a class="text-secondary" href="">Terms of Use</a>
+          <a class="text-secondary" href="">Privacy Policy</a>
+        </div>
+        <p class="m-0">© 2025 Liebherr Group. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+</body>
+</html>

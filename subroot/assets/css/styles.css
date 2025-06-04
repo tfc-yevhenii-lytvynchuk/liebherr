@@ -75,6 +75,8 @@ html {
 body {
   color: var(--font-base-color) !important;
   font-family: var(--copytext-font-family) !important;
+  display: flex;
+  flex-direction: column;
 }
 
 body a,
@@ -262,6 +264,7 @@ body .btn.btn-primary:hover {
 .liebherr-footer {
   background-color: #000000;
   padding: 32px 0;
+  margin-top: auto;
 }
 
 .liebherr-product-card {
