@@ -11,11 +11,20 @@
 
   <style>
     #product-item-carousel {
+      min-width: 440px;
       width: 440px;
     }
     #product-item-carousel .carousel-item {
       height: 500px;
-
+    }
+    @media (max-width: 992px) {
+      #product-item-carousel {
+        min-width: unset;
+        width: 100%;
+      }
+      #product-item-carousel .carousel-item {
+        height: 390px;
+      }
     }
     #product-item-carousel .product-item-carousel-image {
       display: flex;
@@ -43,6 +52,9 @@
       align-items: center;
       justify-content: center;
     }
+    .product-item-info {
+      font-size: 18px;
+    }
   </style>
 
 </head>
@@ -59,7 +71,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto gap-3 nav-underline">
           <li class="nav-item">
-            <a href="#" class="nav-link">MAIN</a>
+            <a href="home.html" class="nav-link">MAIN</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link active" aria-current="page">PRODUCTS</a>
@@ -103,9 +115,9 @@
 
   <section class="liebherr-section">
     <div class="liebherr-container">
-      <div class="d-flex gap-4">
+      <div class="d-flex gap-5 flex-column flex-lg-row">
         <div id="product-item-carousel" class="carousel slide carousel-dark"  data-bs-theme="dark">
-          <!-- https://getbootstrap.com/docs/5.3/components/carousel/#autoplaying-carousels -->
+          <!-- https://getbootstrap.com/docs/5.3/components/carousel -->
 
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -200,6 +212,279 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+
+        <div class="product-item-info d-flex flex-column flex-grow-1">
+          <h1>KGNsf 57Va03</h1>
+          <p><span class="fw-bold">Product ID:</span> RB123432324534</p>
+          <p>Fridge-freezer combination with EasyFresh and NoFrost</p>
+          <p class="row g-0">
+            <span class="col fw-bold">Exterior dimensions: height/width/depth</span>
+            <span class="col-4">201.5 / 59.7 / 67.5 cm</span>
+          </p>
+          <p class="row g-0">
+            <span class="col fw-bold">Total Volume</span>
+            <span class="col-4">371 L</span>
+          </p>
+          <p class="row g-0">
+            <span class="col fw-bold">Noise level</span>
+            <span class="col-4">34 dB</span>
+          </p>
+          <p class="row g-0">
+            <span class="col fw-bold">Connectivity solution</span>
+            <span class="col-4">Retrofittable</span>
+          </p>
+          <div class="d-flex gap-1 mb-4">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+          </div>
+          <div class="d-flex gap-3 align-items-center mb-4">
+            <img height="24" src="assets//images/energy-lables/energy-lable.svg" alt="">
+            <a class="text-uppercase fw-bold text-secondary fs-7 d-flex align-items-center gap-2" href="">pRODUCT DATASHEET <i class="bi bi-chevron-right"></i></a>
+          </div>
+          <div class="d-flex gap-5 align-items-center mb-4">
+            <span class="fw-bold fs-2">1,249.00 EUR</span>
+            <span class="text-success">
+              <i class="bi bi-check2"></i> Available
+            </span>
+          </div>
+          <div class="d-flex column-gap-5 row-gap-3 align-items-center flex-wrap">
+            <button type="submit" class="btn btn-primary px-4">ADD TO CART <i class="bi bi-arrow-right ms-2"></i></button>
+            <a href="" class="text-uppercase fw-bold text-secondary fs-7 d-flex align-items-center gap-2">
+              <i class="bi bi-heart text-primary"></i>
+              Add to favorites
+            </a>
+            <a href="" class="text-uppercase fw-bold text-secondary fs-7 d-flex align-items-center gap-2">
+              <svg width="21" height="20" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.3047 3.42969H21.6406V18.9219H11.3047V3.42969ZM20.8906 18.1719V4.17969H12.0547V18.1719H20.8906ZM0.359375 15.5703V0.078125H10.6953V15.5703H0.359375ZM1.10938 0.828125V14.8203H9.94531V0.828125H1.10938ZM15.7344 13.1328L15.1953 13.6953L12.6875 11.1406L15.1953 8.63281L15.7344 9.17188L14.1406 10.7656H20.1406V11.5156H14.1172L15.7344 13.1328ZM6.26562 5.86719L6.80469 5.32812L9.3125 7.85938L6.80469 10.3672L6.26562 9.82812L7.85938 8.25781H1.85938V7.50781H7.88281L6.26562 5.86719Z" fill="var(--primary-color)"/>
+              </svg>
+              Compare
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="liebherr-section">
+    <div class="liebherr-container">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-link active" id="main-features-tab" data-bs-toggle="tab" data-bs-target="#main-features" type="button" role="tab" aria-controls="main-features" aria-selected="true">MAIN FEATURES</a>
+          <a class="nav-link" id="additional-features-tab" data-bs-toggle="tab" data-bs-target="#additional-features" type="button" role="tab" aria-controls="additional-features" aria-selected="false">ADDITIONAL FEATURES</a>
+          <a class="nav-link" id="technical-data-tab" data-bs-toggle="tab" data-bs-target="#technical-data" type="button" role="tab" aria-controls="technical-data" aria-selected="false">TECHNICAL DATA</a>
+          <a class="nav-link" id="downloads-tab" data-bs-toggle="tab" data-bs-target="#downloads" type="button" role="tab" aria-controls="downloads" aria-selected="false">DOWNLOADS</a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="main-features" role="tabpanel" aria-labelledby="main-features-tab" tabindex="0">
+          MAIN FEATURES TO BE IMPLEMENTED
+        </div>
+        <div class="tab-pane fade" id="additional-features" role="tabpanel" aria-labelledby="additional-features-tab" tabindex="0">
+          ADDITIONAL FEATURES TO BE IMPLEMENTED
+        </div>
+        <div class="tab-pane fade" id="technical-data" role="tabpanel" aria-labelledby="technical-data-tab" tabindex="0">
+          TECHNICAL DATA TO BE IMPLEMENTED
+        </div>
+        <div class="tab-pane fade" id="downloads" role="tabpanel" aria-labelledby="downloads-tab" tabindex="0">
+          DOWNLOADS TO BE IMPLEMENTED
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="liebherr-section">
+    <div class="liebherr-container">
+      <h2 class="mb-4 display-6">Similar devicess</h2>
+
+      <div class="d-flex gap-3 mt-3 w-100 overflow-x-auto pb-2">
+        <div class="liebherr-product-card">
+          <form action="" method="" class="position-absolute top-0 end-0 me-4 mt-4">
+            <!-- PLACEHOLDER FORM PLESE IMPLEMENT -->
+            <input type="hidden" name="productId" value="000000">
+            <button type="submit">
+              <i class="bi bi-heart text-primary"></i>
+            </button>
+          </form>
+          <div class="d-flex justify-content-center mb-2">
+            <img class="liebherr-product-card-image" src="https://media3.bsh-group.com/Product_Shots/300x300/20998523_KB7962FE0_STP_def.jpg" alt="">
+          </div>
+          <span class="fs-4">KGNsf 57Va03</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatum quibusdam nulla placeat sit, earum voluptatibus, pturi ratione corporis?</p>
+          <span class="fw-bold">Exterior dimensions: height/width/depth</span>
+          <span>201.5 / 59.7 / 67.5 cm</span>
+          <span class="my-2"><span class="fw-bold">Total Volume</span> 371 L</span>
+          <div class="d-flex gap-1 mb-2">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-auto">
+            <span class="fs-4">1,249.00 EUR</span>
+            <span class="text-warning fs-7">
+              <i class="bi bi-truck"></i> Delivery 3-4 weeks
+            </span>
+          </div>
+          <div class="d-flex gap-2 mt-2 flex-wrap">
+            <form class="flex-grow-1" action="" method="">
+              <!-- PLACEHOLDER FORM PLESE IMPLEMENT -->
+              <input type="hidden" name="productId" value="00000">
+              <button disabled class="btn btn-primary w-100">ADD TO CART <i class="bi bi-arrow-right ms-2"></i></button>
+            </form>
+            <a class="btn btn-outline-primary flex-grow-1">DETAILS <i class="bi bi-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+        <div class="liebherr-product-card">
+          <form action="" method="" class="position-absolute top-0 end-0 me-4 mt-4">
+            <!-- PLACEHOLDER FORM PLESE IMPLEMENT -->
+            <input type="hidden" name="productId" value="000000">
+            <button type="submit">
+              <i class="bi bi-heart-fill text-primary"></i>
+            </button>
+          </form>
+          <div class="d-flex justify-content-center mb-2">
+            <img class="liebherr-product-card-image" src="https://media3.bsh-group.com/Product_Shots/3000x3000/21135119_KI7966FD0_STP_def.jpg" alt="">
+          </div>
+          <span class="fs-4">KGNsf 57Va03</span>
+          <p>Fridge-freezer combination with EasyFresh and NoFrost</p>
+          <span class="fw-bold">Exterior dimensions: height/width/depth</span>
+          <span>201.5 / 59.7 / 67.5 cm</span>
+          <span class="my-2"><span class="fw-bold">Total Volume</span> 371 L</span>
+          <div class="d-flex gap-1 mb-2">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-auto">
+            <span class="fs-4">1,249.00 EUR</span>
+            <span class="text-success fs-7">
+              <i class="bi bi-check2"></i> Available
+            </span>
+          </div>
+          <div class="d-flex gap-2 mt-2 flex-wrap">
+            <form class="flex-grow-1" action="" method="">
+              <!-- PLACEHOLDER FORM PLESE IMPLEMENT -->
+              <input type="hidden" name="productId" value="00000">
+              <button type="submit" class="btn btn-primary w-100">ADD TO CART <i class="bi bi-arrow-right ms-2"></i></button>
+            </form>
+            <a class="btn btn-outline-primary flex-grow-1">DETAILS <i class="bi bi-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+        <div class="liebherr-product-card">
+          <form action="" method="" class="position-absolute top-0 end-0 me-4 mt-4">
+            <!-- PLACEHOLDER FORM PLESE IMPLEMENT -->
+            <input type="hidden" name="productId" value="000000">
+            <button type="submit">
+              <i class="bi bi-heart-fill text-primary"></i>
+            </button>
+          </form>
+          <div class="d-flex justify-content-center mb-2">
+            <img class="liebherr-product-card-image" src="https://media3.bsh-group.com/Product_Shots/3000x3000/21135119_KI7966FD0_STP_def.jpg" alt="">
+          </div>
+          <span class="fs-4">KGNsf 57Va03</span>
+          <p>Fridge-freezer combination with EasyFresh and NoFrost</p>
+          <span class="fw-bold">Exterior dimensions: height/width/depth</span>
+          <span>201.5 / 59.7 / 67.5 cm</span>
+          <span class="my-2"><span class="fw-bold">Total Volume</span> 371 L</span>
+          <div class="d-flex gap-1 mb-2">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-auto">
+            <span class="fs-4">1,249.00 EUR</span>
+            <span class="text-success fs-7">
+              <i class="bi bi-check2"></i> Available
+            </span>
+          </div>
+          <div class="d-flex gap-2 mt-2 flex-wrap">
+            <form class="flex-grow-1" action="" method="">
+              <!-- PLACEHOLDER FORM PLESE IMPLEMENT -->
+              <input type="hidden" name="productId" value="00000">
+              <button type="submit" class="btn btn-primary w-100">ADD TO CART <i class="bi bi-arrow-right ms-2"></i></button>
+            </form>
+            <a class="btn btn-outline-primary flex-grow-1">DETAILS <i class="bi bi-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+        <div class="liebherr-product-card">
+          <form action="" method="" class="position-absolute top-0 end-0 me-4 mt-4">
+            <!-- PLACEHOLDER FORM PLESE IMPLEMENT -->
+            <input type="hidden" name="productId" value="000000">
+            <button type="submit">
+              <i class="bi bi-heart-fill text-primary"></i>
+            </button>
+          </form>
+          <div class="d-flex justify-content-center mb-2">
+            <img class="liebherr-product-card-image" src="https://media3.bsh-group.com/Product_Shots/3000x3000/21135119_KI7966FD0_STP_def.jpg" alt="">
+          </div>
+          <span class="fs-4">KGNsf 57Va03</span>
+          <p>Fridge-freezer combination with EasyFresh and NoFrost</p>
+          <span class="fw-bold">Exterior dimensions: height/width/depth</span>
+          <span>201.5 / 59.7 / 67.5 cm</span>
+          <span class="my-2"><span class="fw-bold">Total Volume</span> 371 L</span>
+          <div class="d-flex gap-1 mb-2">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-auto">
+            <span class="fs-4">1,249.00 EUR</span>
+            <span class="text-success fs-7">
+              <i class="bi bi-check2"></i> Available
+            </span>
+          </div>
+          <div class="d-flex gap-2 mt-2 flex-wrap">
+            <form class="flex-grow-1" action="" method="">
+              <!-- PLACEHOLDER FORM PLESE IMPLEMENT -->
+              <input type="hidden" name="productId" value="00000">
+              <button type="submit" class="btn btn-primary w-100">ADD TO CART <i class="bi bi-arrow-right ms-2"></i></button>
+            </form>
+            <a class="btn btn-outline-primary flex-grow-1">DETAILS <i class="bi bi-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+        <div class="liebherr-product-card">
+          <form action="" method="" class="position-absolute top-0 end-0 me-4 mt-4">
+            <!-- PLACEHOLDER FORM PLESE IMPLEMENT -->
+            <input type="hidden" name="productId" value="000000">
+            <button type="submit">
+              <i class="bi bi-heart-fill text-primary"></i>
+            </button>
+          </form>
+          <div class="d-flex justify-content-center mb-2">
+            <img class="liebherr-product-card-image" src="https://media3.bsh-group.com/Product_Shots/3000x3000/21135119_KI7966FD0_STP_def.jpg" alt="">
+          </div>
+          <span class="fs-4">KGNsf 57Va03</span>
+          <p>Fridge-freezer combination with EasyFresh and NoFrost</p>
+          <span class="fw-bold">Exterior dimensions: height/width/depth</span>
+          <span>201.5 / 59.7 / 67.5 cm</span>
+          <span class="my-2"><span class="fw-bold">Total Volume</span> 371 L</span>
+          <div class="d-flex gap-1 mb-2">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+            <img width="40" height="40" src="assets/images/features/1.png" alt="feature">
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-auto">
+            <span class="fs-4">1,249.00 EUR</span>
+            <span class="text-success fs-7">
+              <i class="bi bi-check2"></i> Available
+            </span>
+          </div>
+          <div class="d-flex gap-2 mt-2 flex-wrap">
+            <form class="flex-grow-1" action="" method="">
+              <!-- PLACEHOLDER FORM PLESE IMPLEMENT -->
+              <input type="hidden" name="productId" value="00000">
+              <button type="submit" class="btn btn-primary w-100">ADD TO CART <i class="bi bi-arrow-right ms-2"></i></button>
+            </form>
+            <a class="btn btn-outline-primary flex-grow-1">DETAILS <i class="bi bi-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

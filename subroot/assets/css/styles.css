@@ -316,4 +316,17 @@ body .btn.btn-primary:hover {
 input[type="search" i]::-webkit-search-cancel-button {
   cursor: pointer;
 }
+
+body .nav.nav-tabs {
+  border: none;
+  gap: 32px;
+  margin-bottom: 16px;
+}
+body .nav.nav-tabs .nav-link {
+  border: none;
+  padding:0;
+}
+body .nav-tabs .nav-link.active {
+  border-bottom: 2px solid var(--primary-color);
+}
 /*  GLOBAL STYLES */
