@@ -55,6 +55,21 @@
     .product-item-info {
       font-size: 18px;
     }
+    .additional-feature-image, .downloads-image {
+      width: 160px;
+      height: 120px;
+      object-fit: contain;
+    }
+    @media (max-width: 576px) {
+      .additional-feature-image {
+        width: 100%;
+        height: auto;
+      }
+      .downloads-image {
+        width: 64px;
+        height: 64px;
+      }
+    }
   </style>
 
 </head>
@@ -277,18 +292,197 @@
           <a class="nav-link" id="downloads-tab" data-bs-toggle="tab" data-bs-target="#downloads" type="button" role="tab" aria-controls="downloads" aria-selected="false">DOWNLOADS</a>
         </div>
       </nav>
-      <div class="tab-content" id="nav-tabContent">
+      <div class="tab-content p-3 p-lg-5 border" id="nav-tabContent">
         <div class="tab-pane fade show active" id="main-features" role="tabpanel" aria-labelledby="main-features-tab" tabindex="0">
-          MAIN FEATURES TO BE IMPLEMENTED
+          <div class="d-flex flex-column gap-4 gap-lg-5">
+            <div class="row g-3 g-lg-4">
+              <div class="col-12 col-md-5 order-0 order-md-1">
+                <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                  <img class="img-fluid object-fit-contain" src="assets/images/main-features/1.png" alt="">
+                </div>
+              </div>
+              <div class="col-12 col-md-7 order-1">
+                <h3>EasyFresh</h3>
+                <p>Our EasyFresh safe guarantees market-freshness in your home. 
+                  Whether it's unpackaged fruit, vegetables, or other items, everything is stored optimally here. Thanks to the tight seal, the food increases the humidity in the safe, keeping the food fresh for longer.</p>
+              </div>
+            </div>
+            <div class="row g-3 g-lg-4">
+              <div class="col-12 col-md-7 order-1">
+                <h3>NoFrost</h3>
+                <p>When you open your freezer, you want to see frozen food - but certainly not ice and frost. NoFrost protects the freezer compartment from unwanted icing, which consumes a lot of energy and can be expensive. NoFrost means no more tedious and time-consuming defrosting of the freezer, giving you more time for other things – and saving money.</p>
+              </div>
+              <div class="col-12 col-md-5 order-0 order-md-1">
+                <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                  <img class="img-fluid object-fit-contain" src="assets/images/main-features/2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="row g-3 g-lg-4">
+              <div class="col-12 col-md-5 order-0 order-md-1">
+                <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                  <img class="img-fluid object-fit-contain" src="assets/images/main-features/3.png" alt="">
+                </div>
+              </div>
+              <div class="col-12 col-md-7 order-1">
+                <h3>DuoCooling</h3>
+                <p>Thanks to two completely separate cooling circuits, DuoCooling ensures that there is no air exchange between the refrigerator and freezer compartments. Food doesn't dry out, and odors don't transfer. This means less waste, less shopping, and more savings and enjoyment.</p>
+              </div>
+            </div>
+            <div class="row g-3 g-lg-4">
+              <div class="col-12 col-md-7 order-1">
+                <h3>Retrofitable SmartDeviceBox</h3>
+                <p>Want to be prepared for the future of the Smart Home? Your Liebherr will be happy to help. You can retrofit it with a SmartDeviceBox which will connect your Liebherr to the Internet. The SmartDeviceBox can be installed in just a few steps and will open up the whole world of digital possibilities to you today.y and can be expensive. NoFrost means no more tedious and time-consuming defrosting of the freezer, giving you more time for other things - and saving money.</p>
+              </div>
+              <div class="col-12 col-md-5 order-0 order-md-1">
+                <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                  <img class="img-fluid object-fit-contain" src="assets/images/main-features/4.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="row g-3 g-lg-4">
+              <div class="col-12 col-md-5 order-0 order-md-1">
+                <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                  <img class="img-fluid object-fit-contain" src="assets/images/main-features/5.png" alt="">
+                </div>
+              </div>
+              <div class="col-12 col-md-7 order-1">
+                <h3>SteelFinish</h3>
+                <p>Do you love cool elegance in your kitchen? Then a Liebherr with SteelFinish is your choice. The co-laminate material with vertical brushing is visually very similar to real stainless steel, robust, and easy to clean. The silver-painted side panels perfectly complement the elegant look.</p>
+              </div>
+            </div>
+            <div class="row g-3 g-lg-4">
+              <div class="col-12 col-md-7 order-1">
+                <h3>Touch display</h3>
+                <p> Truly touching: The touch display makes operating your Liebherr simple and intuitive. All functions are clearly arranged on the display. With a light touch of your finger, you can effortlessly select functions or check the current temperature of your refrigerator.</p>
+              </div>
+              <div class="col-12 col-md-5 order-0 order-md-1">
+                <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                  <img class="img-fluid object-fit-contain" src="assets/images/main-features/6.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
         <div class="tab-pane fade" id="additional-features" role="tabpanel" aria-labelledby="additional-features-tab" tabindex="0">
-          ADDITIONAL FEATURES TO BE IMPLEMENTED
+          <div class="row g-3 g-lg-4">
+            <div class="col-12 col-lg-6">
+              <div class="d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-3 gap-lg-4">
+                <img class="additional-feature-image" src="assets/images/main-features/1.png" alt="">
+                <div>
+                  <h3 class="fs-4">Recessed Grip</h3>
+                  <p>Unique and functional: Thanks to the vertically continuous and ergonomically positioned recessed handle, you can open the appliance with ease. Additionally, the modern and puristic design allows for perfect integration into your handle-free kitchen.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-3 gap-lg-4">
+                <img class="additional-feature-image" src="assets/images/main-features/2.png" alt="">
+                <div>
+                  <h3 class="fs-4">InteriorFit</h3>
+                  <p>Complete the puristic design of your kitchen: Our refrigerators fit perfectly into a 60cm-deep niche. Only the door protrudes slightly, ensuring optimal access to the recessed handle and lever handle. This keeps the focus on your kitchen – with your Liebherr as the focal point and highlight.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-3 gap-lg-4">
+                <img class="additional-feature-image" src="assets/images/main-features/3.png" alt="">
+                <div>
+                  <h3 class="fs-4">PowerCooling system</h3>
+                  <p>Do you want to be sure that your refrigerator's cooling is distributed almost evenly? The PowerCooling system ensures this: The powerful yet quiet fan efficiently distributes the cold air throughout the entire refrigerator compartment.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-3 gap-lg-4">
+                <img class="additional-feature-image" src="assets/images/main-features/4.png" alt="">
+                <div>
+                  <h3 class="fs-4">Base concept</h3>
+                  <p>Do you want your refrigerator to be powerful and convenient – ​​but also sustainable? Then a Liebherr is perfect for you. Our BluPerformance technology makes it a true all-rounder: It offers extra volume and cooling performance – yet consumes extremely little energy. And listen up: You'll hear almost nothing. Because your Liebherr is extremely quiet despite its power.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-3 gap-lg-4">
+                <img class="additional-feature-image" src="assets/images/main-features/5.png" alt="">
+                <div>
+                  <h3 class="fs-4">SuperSilent</h3>
+                  <p>Pssst – listen carefully: Your Liebherr is so quiet you'll have to strain your ears to hear it. What's behind it? All refrigeration components, such as compressors, valves, fans, and evaporators, are optimized and perfectly coordinated. So you only hear what you want in your kitchen.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-3 gap-lg-4">
+                <img class="additional-feature-image" src="assets/images/main-features/7.png" alt="">
+                <div>
+                  <h3 class="fs-4">Door rack</h3>
+                  <p>Do you want a secure storage area for your drinks or food? And still want them easy to reach? Our door racks offer both. They're height-adjustable, so they adapt to your needs. The movable and removable bottle holder is also practical: This keeps your bottles safe at all times.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-3 gap-lg-4">
+                <img class="additional-feature-image" src="assets/images/main-features/8.png" alt="">
+                <div>
+                  <h3 class="fs-4">Height-adjustable interior door racks</h3>
+                  <p>The LED ceiling lighting illuminates the interior from above, providing a clear overview of your food. An extra bright spot: The LEDs are positioned in front of the glass shelves, ensuring even a full refrigerator is well-lit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-3 gap-lg-4">
+                <img class="additional-feature-image" src="assets/images/main-features/6.png" alt="">
+                <div>
+                  <h3 class="fs-4">LED ceiling lighting</h3>
+                  <p>The LED ceiling lighting illuminates the interior from above, providing a clear overview of your food. An extra bright spot: The LEDs are positioned in front of the glass shelves, ensuring even a full refrigerator is well-lit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="tab-pane fade" id="technical-data" role="tabpanel" aria-labelledby="technical-data-tab" tabindex="0">
           TECHNICAL DATA TO BE IMPLEMENTED
         </div>
         <div class="tab-pane fade" id="downloads" role="tabpanel" aria-labelledby="downloads-tab" tabindex="0">
-          DOWNLOADS TO BE IMPLEMENTED
+          <div class="row g-3 g-lg-4">
+            <div class="col-12 col-lg-6">
+              <div class="d-flex gap-3 gap-lg-4">
+                <img class="downloads-image" src="assets/images/main-features/9.png" alt="">
+                <div>
+                  <h3 class="fs-4">Operating instructions</h3>
+                  <a href="" class="text-decoration-underline text-body-secondary fw-bold">DOWNLOAD <i class="bi bi-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="d-flex gap-3 gap-lg-4">
+                <img class="downloads-image" src="assets/images/main-features/9.png" alt="">
+                <div>
+                  <h3 class="fs-4">Assembly and installation instructions</h3>
+                  <a href="" class="text-decoration-underline text-body-secondary fw-bold">DOWNLOAD <i class="bi bi-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="d-flex gap-3 gap-lg-4">
+                <img class="downloads-image" src="assets/images/main-features/10.png" alt="">
+                <div>
+                  <h3 class="fs-4">Dimensional drawing</h3>
+                  <a href="" class="text-decoration-underline text-body-secondary fw-bold">DOWNLOAD <i class="bi bi-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="d-flex gap-3 gap-lg-4">
+                <img class="downloads-image" src="assets/images/main-features/11.png" alt="">
+                <div>
+                  <h3 class="fs-4">CE-Certificate</h3>
+                  <a href="" class="text-decoration-underline text-body-secondary fw-bold">DOWNLOAD <i class="bi bi-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
