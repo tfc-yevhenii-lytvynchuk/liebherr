@@ -285,15 +285,16 @@
   <section class="liebherr-section">
     <div class="liebherr-container">
       <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a class="nav-link active" id="main-features-tab" data-bs-toggle="tab" data-bs-target="#main-features" type="button" role="tab" aria-controls="main-features" aria-selected="true">MAIN FEATURES</a>
-          <a class="nav-link" id="additional-features-tab" data-bs-toggle="tab" data-bs-target="#additional-features" type="button" role="tab" aria-controls="additional-features" aria-selected="false">ADDITIONAL FEATURES</a>
-          <a class="nav-link" id="technical-data-tab" data-bs-toggle="tab" data-bs-target="#technical-data" type="button" role="tab" aria-controls="technical-data" aria-selected="false">TECHNICAL DATA</a>
-          <a class="nav-link" id="downloads-tab" data-bs-toggle="tab" data-bs-target="#downloads" type="button" role="tab" aria-controls="downloads" aria-selected="false">DOWNLOADS</a>
+        <div class="nav nav-tabs" role="tablist">
+          <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#main-features" type="button" role="tab" aria-controls="main-features" aria-selected="true">MAIN FEATURES</a>
+          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#additional-features" type="button" role="tab" aria-controls="additional-features" aria-selected="false">ADDITIONAL FEATURES</a>
+          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#technical-data" type="button" role="tab" aria-controls="technical-data" aria-selected="false">TECHNICAL DATA</a>
+          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#downloads" type="button" role="tab" aria-controls="downloads" aria-selected="false">DOWNLOADS</a>
         </div>
       </nav>
-      <div class="tab-content p-3 p-lg-5 border" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="main-features" role="tabpanel" aria-labelledby="main-features-tab" tabindex="0">
+      <div class="tab-content p-3 p-lg-5 border">
+        <!-- Main features -->
+        <div class="tab-pane fade show active" id="main-features" role="tabpanel" tabindex="0">
           <div class="d-flex flex-column gap-4 gap-lg-5">
             <div class="row g-3 g-lg-4">
               <div class="col-12 col-md-5 order-0 order-md-1">
@@ -365,7 +366,9 @@
           </div>
 
         </div>
-        <div class="tab-pane fade" id="additional-features" role="tabpanel" aria-labelledby="additional-features-tab" tabindex="0">
+        
+        <!-- Additional features -->
+        <div class="tab-pane fade" id="additional-features" role="tabpanel" tabindex="0">
           <div class="row g-3 g-lg-4">
             <div class="col-12 col-lg-6">
               <div class="d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-3 gap-lg-4">
@@ -441,10 +444,64 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="technical-data" role="tabpanel" aria-labelledby="technical-data-tab" tabindex="0">
-          TECHNICAL DATA TO BE IMPLEMENTED
+
+        <!-- Technical data -->
+        <div class="tab-pane fade" id="technical-data" role="tabpanel" tabindex="0">
+          <div class="nav nav-tabs" role="tablist">
+            <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#general-technical-data" type="button" role="tab" aria-controls="general-technical-data" aria-selected="true">GENERAL PRODUCT INFORMATION</a>
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#output-and-consumption-technical-data" type="button" role="tab" aria-controls="output-and-consumption-technical-data" aria-selected="false">OUTPUT AND CONSUMPTION</a>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="general-technical-data" role="tabpanel" aria-labelledby="general-technical-data" tabindex="0">
+              <div class="row g-0 py-3 border-top">
+                <div class="col-12 col-md-6">
+                  <span class="fw-bold">Model type</span>
+                </div>
+                <div class="col-12 col-md-6">
+                  <span>Fridge-freezer combination with EasyFresh and NoFrost</span>
+                </div>
+              </div>
+              <div class="row g-0 py-3 border-top">
+                <div class="col-12 col-md-6">
+                  <span class="fw-bold">GTIN</span>
+                </div>
+                <div class="col-12 col-md-6">
+                  <span>4016803150596</span>
+                </div>
+              </div>
+              <div class="row g-0 py-3 border-top">
+                <div class="col-12 col-md-6">
+                  <span class="fw-bold">Series</span>
+                </div>
+                <div class="col-12 col-md-6">
+                  <span>Pure</span>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="output-and-consumption-technical-data" role="tabpanel" aria-labelledby="output-and-consumption-technical-data" tabindex="0">
+              <div class="row g-0 py-3 border-top">
+                <div class="col-12 col-md-6">
+                  <span class="fw-bold">EXAMPLE PROPERTY</span>
+                </div>
+                <div class="col-12 col-md-6">
+                  <span>example property value</span>
+                </div>
+              </div>
+              <div class="row g-0 py-3 border-top">
+                <div class="col-12 col-md-6">
+                  <span class="fw-bold">EXAMPLE PROPERTY</span>
+                </div>
+                <div class="col-12 col-md-6">
+                  <span>example property value</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
-        <div class="tab-pane fade" id="downloads" role="tabpanel" aria-labelledby="downloads-tab" tabindex="0">
+
+        <!-- Downloads -->
+        <div class="tab-pane fade" id="downloads" role="tabpanel"  tabindex="0">
           <div class="row g-3 g-lg-4">
             <div class="col-12 col-lg-6">
               <div class="d-flex gap-3 gap-lg-4">
