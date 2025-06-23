@@ -329,4 +329,22 @@ body .nav.nav-tabs .nav-link {
 body .nav-tabs .nav-link.active {
   border-bottom: 2px solid var(--primary-color);
 }
+
+/* header dropdown styles */
+@media (min-width: 992px) {
+  .liebherr-nav-dropdown-menu-content {
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 100vw;
+  }
+}
+nav.navbar .dropdown-menu[data-bs-popper] {
+  top: 97%;
+  border-radius: 0;
+  border-bottom: 1px solid #EEE !important;
+  border-top: 1px solid #EEE !important;
+  border-left: 0;
+  border-right: 0;
+}
+
 /*  GLOBAL STYLES */

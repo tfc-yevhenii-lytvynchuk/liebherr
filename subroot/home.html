@@ -100,7 +100,94 @@
             <a href="home.html" class="nav-link active" aria-current="page">MAIN</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">PRODUCTS</a>
+            <a href="#" class="nav-link dropdown-toggle" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">PRODUCTS</a>
+            <div class="dropdown-menu">
+              <div class="liebherr-nav-dropdown-menu-content py-3">
+                <div class="liebherr-container d-flex flex-wrap gap-5">
+                  <!-- CATEGORIES TABS TRIGGERS -->
+                  <div class="d-flex flex-column" role="tablist">
+                    <div class="d-flex flex-column">
+                      <!--  Fridge-freezers  -->
+                      <a class="nav-link active" data-bs-toggle="tab"  data-bs-target="#fridge-freezers-subcategories" role="button" aria-selected="true">
+                        <div class="d-flex align-items-center gap-3 text-nowrap ">
+                          <span class="fw-bold">Fridge-freezers</span>
+                          <i class="bi bi-chevron-right text-primary fs-5"></i>
+                        </div>
+                      </a>
+                      <!-- Fridges -->
+                      <a class="nav-link" data-bs-toggle="tab" data-bs-target="#fridges-subcategories" role="button" aria-selected="false">
+                        <div class="d-flex align-items-center gap-3 text-nowrap">
+                          <span class="fw-bold">Fridges</span>
+                          <i class="bi bi-chevron-right text-primary fs-5"></i>
+                        </div>
+                      </a>
+                      <!-- Side-by-Side Fridges -->
+                      <a class="nav-link" data-bs-toggle="tab" data-bs-target="#side-by-side-fridges-subcategories" role="button" aria-selected="false">
+                        <div class="d-flex align-items-center gap-3 text-nowrap">
+                          <span class="fw-bold">Side-by-Side Fridges</span>
+                          <i class="bi bi-chevron-right text-primary fs-5"></i>
+                        </div>
+                      </a>
+                      <!-- Wine Cellars -->
+                      <a class="nav-link" data-bs-toggle="tab" data-bs-target="#wine-cellars-subcategories" role="button" aria-selected="false">
+                        <div class="d-flex align-items-center gap-3 text-nowrap">
+                          <span class="fw-bold">Wine Cellars</span>
+                          <i class="bi bi-chevron-right text-primary fs-5"></i>
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                    <!-- SUBCATEGORIES TABS -->
+                  <div class="tab-content">
+                    <!-- Fridge-freezers subcategories -->
+                    <div id="fridge-freezers-subcategories" class="tab-pane fade show active" role="tabpanel" aria-labelledby="fridge-freezers-category" tabindex="0">
+                      <div class="d-flex flex-column gap-3 pt-2">
+                        <a href="search-results.html">
+                          <span class="fw-bold">Freestanding fridge-freezers</span>
+                        </a>
+                        <a href="search-results.html">
+                          <span class="fw-bold">Fully integrated fridge-freezers</span>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Fridges subcategories -->
+                    <div id="fridges-subcategories" class="tab-pane fade" role="tabpanel" aria-labelledby="fridges-category" tabindex="0">
+                      <div class="d-flex flex-column gap-3 pt-2">
+                        <a href="search-results.html">
+                          <span class="fw-bold">Fridges A</span>
+                        </a>
+                        <a href="search-results.html">
+                          <span class="fw-bold">Fridges B</span>
+                        </a>
+                      </div>
+                    </div>
+                    <!--Side-by-Side Fridges -->
+                    <div id="side-by-side-fridges-subcategories" class="tab-pane fade" role="tabpanel" aria-labelledby="side-by-side-fridges-category" tabindex="0">
+                      <div class="d-flex flex-column gap-3 pt-2">
+                        <a href="search-results.html">
+                          <span class="fw-bold">Side-by-Side Fridges A</span>
+                        </a>
+                        <a href="search-results.html">
+                          <span class="fw-bold">Side-by-Side Fridges B</span>
+                        </a>
+                      </div>
+                    </div>
+                    <!--Wine Cellars -->
+                    <div id="wine-cellars-subcategories" class="tab-pane fade" role="tabpanel" aria-labelledby="wine-cellars-category" tabindex="0">
+                      <div class="d-flex flex-column gap-3 pt-2">
+                        <a href="search-results.html">
+                          <span class="fw-bold">Wine Cellars A</span>
+                        </a>
+                        <a href="search-results.html">
+                          <span class="fw-bold">Wine Cellars B</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">RESOURCES</a>
