@@ -62,10 +62,12 @@ html:root {
   --primary-color: #2779C4;
   --success-color: #006800;
   --warning-color: #EB6F25;
+  --danger-color: #680000;
 
   --bs-primary-rgb: 39, 121, 196;
   --bs-success-rgb: 0, 104, 0;
   --bs-warning-rgb: 235, 111, 37;
+  --bs-danger-rgb: 104, 0, 0;
 }
 
 html {
