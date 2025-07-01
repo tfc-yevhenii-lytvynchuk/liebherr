@@ -20,6 +20,9 @@
     .table-header-product-info {
       max-width: 212px;
     }
+    .table-header-row th {
+      border-bottom: none;
+    }
 
     /*IMPORTANT TABBABLE TABLE CONTENT STYLES*/
     .tab-content>tbody.tab-pane {
@@ -169,13 +172,13 @@
     </nav>
   </div>
 
-  <section class="liebherr-section">
+  <section class="liebherr-section mb-4">
     <div class="liebherr-container">
       <h1 class="mb-4">Your product comparison</h1>
       <div class="table-responsive">
         <table class="table tab-content">
           <thead>
-            <tr class="align-top ">
+            <tr class="align-top table-header-row">
               <th scope="col">
                 <form class="features-form d-flex flex-column">
                   <p>Products in list: 6</p>
@@ -267,7 +270,7 @@
               </th>
             </tr>
             <!-- TABBABLE CONTENT NAVIGATION TABLE HEADER ROW -->
-            <tr>
+            <tr class="table-header-row">
               <th colspan="100%" >
                 <ul class="nav nav-tabs m-0" role="tablist">
                   <li class="nav-item" role="presentation">
