@@ -20,6 +20,15 @@
     .table-header-product-info {
       max-width: 212px;
     }
+
+    /*IMPORTANT TABBABLE TABLE CONTENT STYLES*/
+    .tab-content>tbody.tab-pane {
+      display: none;
+    }
+    .tab-content>tbody.tab-pane.active {
+      display: table-row-group;
+    }
+
   </style>
 </head>
 <body>
@@ -164,7 +173,7 @@
     <div class="liebherr-container">
       <h1 class="mb-4">Your product comparison</h1>
       <div class="table-responsive">
-        <table class="table">
+        <table class="table tab-content">
           <thead>
             <tr class="align-top ">
               <th scope="col">
@@ -256,15 +265,23 @@
                   </a>
                 </div>
               </th>
-  
             </tr>
-          </thead>
-          <tbody>
-            <tr >
+            <!-- TABBABLE CONTENT NAVIGATION TABLE HEADER ROW -->
+            <tr>
               <th colspan="100%" >
-                <span class="fs-5">Products highlight</span>
+                <ul class="nav nav-tabs m-0" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#products-highlight-tab" role="button" aria-selected="true">PRODUCTS HIGHLIGHT</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#product-details-tab" role="button" aria-selected="false">TECHNICAL DATA</a>
+                  </li>
+                </ul>
               </th>
             </tr>
+          </thead>
+          <!-- USE <tbody> TAG ONLY FOR TABBABLE CONTENT -->
+          <tbody class="tab-pane fade show active" id="products-highlight-tab" role="tabpanel" aria-labelledby="products-highlight-tab">
             <tr>
               <th scope="row">Exterior dimensions: height/width/depth</th>
               <td>185.5 / 59.7 / 67.5 cm</td>
@@ -371,9 +388,26 @@
               <td>CE, RoHS</td>
             </tr>
           </tbody>
+          <!-- USE <tbody> TAG ONLY FOR TABBABLE CONTENT -->
+          <tbody class="tab-pane fade" id="product-details-tab" role="tabpanel" aria-labelledby="product-details-tab">
+            <tr>
+              <th scope="row">PRODUCT DETAILS PROPERTY 1</th>
+              <td>TEST</td>
+              <td>TEST</td>
+              <td>TEST</td>
+              <td>TEST</td>
+            </tr>
+            <tr>
+              <th scope="row">PRODUCT DETAILS PROPERTY 2</th>
+              <td>TEST</td>
+              <td>TEST</td>
+              <td>TEST</td>
+              <td>TEST</td>
+            </tr>
+          </tbody>
+
         </table>
       </div>
-
     </div>
   </section>
 
