@@ -256,6 +256,16 @@ body .btn.btn-outline-primary:hover {
   background-color: #003057 !important;
   color: #FFF !important;
 }
+body .btn.btn-outline-danger:hover {
+  background-color: var(--danger-color) !important;
+  border-color: var(--danger-color) !important;
+  color: #FFF !important;
+}
+body .btn.btn-outline-danger {
+  border-color: black;
+  color: var(--danger-color);
+}
+
 body .btn.btn-primary:hover {
   color: #FFF !important;
 }
