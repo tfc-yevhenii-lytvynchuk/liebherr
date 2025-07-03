@@ -436,4 +436,8 @@ input.form-control {
     max-height: 200px;
   }
 }
+body .form-check-input {
+  width: 24px;
+  height: 24px;
+}
 /*  GLOBAL STYLES */
