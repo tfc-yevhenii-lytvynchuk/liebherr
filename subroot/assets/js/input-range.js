@@ -51,8 +51,12 @@ function initRangeSlider(config) {
   };
 
   const updateProgress = () => {
-    const minValue = parseInt(minInput.value);
-    const maxValue = parseInt(maxInput.value);
+    let minValue = parseInt(minInput.value);
+    let maxValue = parseInt(maxInput.value);
+
+    // Handle NaN values
+    if (isNaN(minValue)) minValue = min;
+    if (isNaN(maxValue)) maxValue = max;
 
     // get the total range of the slider
     const range = max - min;
@@ -76,8 +80,13 @@ function initRangeSlider(config) {
   const updateRange = (event) => {
     const input = event.target;
 
-    let minVal = parseInt(minPriceInput.value);
-    let maxVal = parseInt(maxPriceInput.value);
+    // Handle empty strings properly
+    let minVal = minPriceInput.value === '' ? min : parseInt(minPriceInput.value);
+    let maxVal = maxPriceInput.value === '' ? max : parseInt(maxPriceInput.value);
+
+    // Handle NaN values
+    if (isNaN(minVal)) minVal = min;
+    if (isNaN(maxVal)) maxVal = max;
 
     // Ensure values are within bounds
     minVal = Math.max(min, Math.min(minVal, max));
@@ -109,14 +118,20 @@ function initRangeSlider(config) {
   maxPriceInput.addEventListener("input", updateRange);
 
   minInput.addEventListener("input", () => {
-    if (parseInt(minInput.value) >= parseInt(maxInput.value)) {
+    const minVal = parseInt(minInput.value);
+    const maxVal = parseInt(maxInput.value);
+    
+    if (!isNaN(minVal) && !isNaN(maxVal) && minVal >= maxVal) {
       maxInput.value = minInput.value;
     }
     updateProgress();
   });
 
   maxInput.addEventListener("input", () => {
-    if (parseInt(maxInput.value) <= parseInt(minInput.value)) {
+    const minVal = parseInt(minInput.value);
+    const maxVal = parseInt(maxInput.value);
+    
+    if (!isNaN(minVal) && !isNaN(maxVal) && maxVal <= minVal) {
       minInput.value = maxInput.value;
     }
     updateProgress();
